@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+   File:                build-tools.xml
+   Authors:             Justin Basilico
+   Company:             Sandia National Laboratories
+   Project:             Sandia Generated Matrix Tool
+
+   Copyright December 20, 2010, Sandia Corporation.
+   Under the terms of Contract DE-AC04-94AL85000, there is a non-exclusive
+   license for use of this work by or on behalf of the U.S. Government. Export
+   of this program may require a license from the United States Government.
+   See CopyrightHistory.txt for complete details.
+
+   Description:
+   This Ant build script provides a set of extra build tools. These tools
+   provide things such as source-code and byte-code analysis, metrics, and
+   coverage reports.
+
+   To use the build script from NetBeans, you have to set the tools.dir to the
+   location that contains the binaries for the set of build tools that the
+   script makes use of. The place to do this is by modifying the
+   nbproject/private/private.properties file. This ensures you can use a path
+   that is local to your specific system but that it will not propagate that
+   system-specific path to other projects.
+-->
+
+<project name="Sandia Generated Matrix Tool (tools)" default="default" basedir=".">
+    <description>Extra build tools.</description>
+
+    <property name="tools.config.dir" value="../Foundry/Tools/Configuration"/>
+
+    <!-- We make use of the NetBeans project build file. -->
+    <import file="build.xml"/>
+
+    <!-- We also make use of the implementation of the build tool script. -->
+    <import file="../Foundry/Tools/Configuration/build-tools-impl.xml"/>
+
+</project>

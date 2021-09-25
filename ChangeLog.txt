@@ -1,0 +1,6 @@
+This file contains the change log for the Sandia Generated Matrix Tool.
+
+Changes since last release:
+
+Release 1.0.0:
+First open source release.
